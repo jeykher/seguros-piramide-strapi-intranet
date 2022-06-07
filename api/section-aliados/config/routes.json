@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/section-aliados",
+      "handler": "section-aliados.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/section-aliados/count",
+      "handler": "section-aliados.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/section-aliados/:id",
+      "handler": "section-aliados.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/section-aliados",
+      "handler": "section-aliados.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/section-aliados/:id",
+      "handler": "section-aliados.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/section-aliados/:id",
+      "handler": "section-aliados.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

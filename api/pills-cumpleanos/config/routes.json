@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pills-cumpleanos",
+      "handler": "pills-cumpleanos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-cumpleanos/count",
+      "handler": "pills-cumpleanos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-cumpleanos/:id",
+      "handler": "pills-cumpleanos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pills-cumpleanos",
+      "handler": "pills-cumpleanos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pills-cumpleanos/:id",
+      "handler": "pills-cumpleanos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pills-cumpleanos/:id",
+      "handler": "pills-cumpleanos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

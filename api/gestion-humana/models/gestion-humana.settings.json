@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gestion_humanas",
+  "info": {
+    "name": "GestionHumana",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "url": {
+      "type": "string"
+    },
+    "order_section": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "contenido_gestion_humanas": {
+      "via": "gestion_humana",
+      "collection": "contenido-gestion-humana"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navbar_apoyo_documentals",
+  "info": {
+    "name": "NavbarApoyoDocumentals"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

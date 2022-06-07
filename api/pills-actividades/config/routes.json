@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pills-actividades",
+      "handler": "pills-actividades.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-actividades/count",
+      "handler": "pills-actividades.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-actividades/:id",
+      "handler": "pills-actividades.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pills-actividades",
+      "handler": "pills-actividades.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pills-actividades/:id",
+      "handler": "pills-actividades.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pills-actividades/:id",
+      "handler": "pills-actividades.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

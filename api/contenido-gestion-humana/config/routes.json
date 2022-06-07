@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contenido-gestion-humanas",
+      "handler": "contenido-gestion-humana.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contenido-gestion-humanas/count",
+      "handler": "contenido-gestion-humana.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contenido-gestion-humanas/:id",
+      "handler": "contenido-gestion-humana.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contenido-gestion-humanas",
+      "handler": "contenido-gestion-humana.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contenido-gestion-humanas/:id",
+      "handler": "contenido-gestion-humana.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contenido-gestion-humanas/:id",
+      "handler": "contenido-gestion-humana.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "navbar_administracions",
+  "info": {
+    "name": "NavbarAdministracion"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

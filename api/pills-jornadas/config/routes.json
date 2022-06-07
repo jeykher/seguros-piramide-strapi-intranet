@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pills-jornadas",
+      "handler": "pills-jornadas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-jornadas/count",
+      "handler": "pills-jornadas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-jornadas/:id",
+      "handler": "pills-jornadas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pills-jornadas",
+      "handler": "pills-jornadas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pills-jornadas/:id",
+      "handler": "pills-jornadas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pills-jornadas/:id",
+      "handler": "pills-jornadas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

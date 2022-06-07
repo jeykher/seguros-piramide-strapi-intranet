@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pills_cumpleanos",
+  "info": {
+    "name": "PillsCumpleaños"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "department": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "order_section": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    }
+  }
+}

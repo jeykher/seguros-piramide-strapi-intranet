@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pills-graduaciones",
+      "handler": "pills-graduaciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-graduaciones/count",
+      "handler": "pills-graduaciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-graduaciones/:id",
+      "handler": "pills-graduaciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pills-graduaciones",
+      "handler": "pills-graduaciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pills-graduaciones/:id",
+      "handler": "pills-graduaciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pills-graduaciones/:id",
+      "handler": "pills-graduaciones.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/seguridad-saluds",
+      "handler": "seguridad-salud.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seguridad-saluds/count",
+      "handler": "seguridad-salud.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seguridad-saluds/:id",
+      "handler": "seguridad-salud.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/seguridad-saluds",
+      "handler": "seguridad-salud.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/seguridad-saluds/:id",
+      "handler": "seguridad-salud.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/seguridad-saluds/:id",
+      "handler": "seguridad-salud.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

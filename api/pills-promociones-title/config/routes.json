@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pills-promociones-titles",
+      "handler": "pills-promociones-title.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-promociones-titles/count",
+      "handler": "pills-promociones-title.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-promociones-titles/:id",
+      "handler": "pills-promociones-title.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pills-promociones-titles",
+      "handler": "pills-promociones-title.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pills-promociones-titles/:id",
+      "handler": "pills-promociones-title.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pills-promociones-titles/:id",
+      "handler": "pills-promociones-title.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

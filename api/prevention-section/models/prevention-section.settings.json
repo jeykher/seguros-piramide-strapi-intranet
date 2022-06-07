@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prevention_sections",
+  "info": {
+    "name": "PreventionSection",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    },
+    "order_section": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "contenido_prevention_sections": {
+      "via": "prevention_section",
+      "collection": "contenido-prevention-sections"
+    },
+    "Descargar": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aplicaciones-intranets",
+      "handler": "aplicaciones-intranet.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aplicaciones-intranets/count",
+      "handler": "aplicaciones-intranet.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/aplicaciones-intranets/:id",
+      "handler": "aplicaciones-intranet.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/aplicaciones-intranets",
+      "handler": "aplicaciones-intranet.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aplicaciones-intranets/:id",
+      "handler": "aplicaciones-intranet.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aplicaciones-intranets/:id",
+      "handler": "aplicaciones-intranet.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

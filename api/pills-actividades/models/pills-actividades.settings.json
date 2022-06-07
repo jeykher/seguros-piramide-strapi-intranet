@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pills_actividades",
+  "info": {
+    "name": "PillsActividades"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "day": {
+      "type": "string"
+    },
+    "order_section": {
+      "type": "integer",
+      "required": true,
+      "default": 1
+    }
+  }
+}

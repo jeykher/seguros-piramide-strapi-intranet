@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/navbar-apoyo-documentals",
+      "handler": "navbar-apoyo-documentals.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/navbar-apoyo-documentals/count",
+      "handler": "navbar-apoyo-documentals.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/navbar-apoyo-documentals/:id",
+      "handler": "navbar-apoyo-documentals.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/navbar-apoyo-documentals",
+      "handler": "navbar-apoyo-documentals.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/navbar-apoyo-documentals/:id",
+      "handler": "navbar-apoyo-documentals.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/navbar-apoyo-documentals/:id",
+      "handler": "navbar-apoyo-documentals.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

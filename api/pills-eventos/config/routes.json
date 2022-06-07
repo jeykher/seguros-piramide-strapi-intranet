@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pills-eventos",
+      "handler": "pills-eventos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-eventos/count",
+      "handler": "pills-eventos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pills-eventos/:id",
+      "handler": "pills-eventos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pills-eventos",
+      "handler": "pills-eventos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pills-eventos/:id",
+      "handler": "pills-eventos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pills-eventos/:id",
+      "handler": "pills-eventos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/prevention-sections",
+      "handler": "prevention-section.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prevention-sections/count",
+      "handler": "prevention-section.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prevention-sections/:id",
+      "handler": "prevention-section.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prevention-sections",
+      "handler": "prevention-section.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/prevention-sections/:id",
+      "handler": "prevention-section.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/prevention-sections/:id",
+      "handler": "prevention-section.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/navbar-administracions",
+      "handler": "navbar-administracion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/navbar-administracions/count",
+      "handler": "navbar-administracion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/navbar-administracions/:id",
+      "handler": "navbar-administracion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/navbar-administracions",
+      "handler": "navbar-administracion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/navbar-administracions/:id",
+      "handler": "navbar-administracion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/navbar-administracions/:id",
+      "handler": "navbar-administracion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

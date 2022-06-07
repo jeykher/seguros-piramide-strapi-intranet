@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/navbar-gestion-humanas",
+      "handler": "navbar-gestion-humanas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/navbar-gestion-humanas/count",
+      "handler": "navbar-gestion-humanas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/navbar-gestion-humanas/:id",
+      "handler": "navbar-gestion-humanas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/navbar-gestion-humanas",
+      "handler": "navbar-gestion-humanas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/navbar-gestion-humanas/:id",
+      "handler": "navbar-gestion-humanas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/navbar-gestion-humanas/:id",
+      "handler": "navbar-gestion-humanas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

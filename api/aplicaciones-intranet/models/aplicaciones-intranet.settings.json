@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aplicaciones_intranets",
+  "info": {
+    "name": "AplicacionesIntranet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

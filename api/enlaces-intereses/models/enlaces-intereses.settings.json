@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enlaces_intereses",
+  "info": {
+    "name": "EnlacesIntereses"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "twiter": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "google": {
+      "type": "string"
+    },
+    "order_section": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    }
+  }
+}

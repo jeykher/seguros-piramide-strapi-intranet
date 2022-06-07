@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contenido_seguridad_saluds",
+  "info": {
+    "name": "ContenidoSeguridadSalud",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paragraph": {
+      "type": "text"
+    },
+    "order_section": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ListaOpciones": {
+      "type": "enumeration",
+      "enum": [
+        "IMAGEN",
+        "PARRAFO",
+        "PARRAFO_IMAGEN_DERECHA",
+        "PARRAFO_IMAGEN_IZQUIERDA",
+        "FLYERS"
+      ],
+      "required": true
+    },
+    "seguridad_salud": {
+      "model": "seguridad-salud",
+      "via": "contenido_seguridad_saluds"
+    }
+  }
+}

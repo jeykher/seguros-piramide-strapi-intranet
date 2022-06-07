@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contenido_prevention_sections",
+  "info": {
+    "name": "ContenidoPreventionSections",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paragraph": {
+      "type": "text"
+    },
+    "order_section": {
+      "type": "integer",
+      "default": 1,
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "ListaOpciones": {
+      "type": "enumeration",
+      "enum": [
+        "IMAGEN",
+        "PARRAFO",
+        "PARRAFO_IMAGEN_DERECHA",
+        "PARRAFO_IMAGEN_IZQUIERDA",
+        "FLYERS"
+      ],
+      "required": true
+    },
+    "prevention_section": {
+      "via": "contenido_prevention_sections",
+      "model": "prevention-section"
+    }
+  }
+}
